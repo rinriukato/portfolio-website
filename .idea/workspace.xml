@@ -5,35 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ee2c546-b8be-498c-bfc2-93e2111065d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Portfolio Website.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/carousel/carverna.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/carousel/nexus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/carousel/qvr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/header-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/icons/CSS3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/icons/HTML5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/icons/c_sharp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/icons/docker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/icons/flask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/icons/gdscript.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/icons/git.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/icons/godot_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/icons/js.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/icons/python.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/icons/sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/icons/unity.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/profile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2gjk4Od4It46vLsmz6ILGyW0o45" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -62,20 +37,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.server.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/MainCodebase/Python_Bootcamp/Portfolio Website/static/assets/icons",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.server.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/MainCodebase/Python_Bootcamp/Portfolio Website/static/assets/icons&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\MainCodebase\Python_Bootcamp\Portfolio Website\static\assets\icons" />
+      <recent name="D:\MainCodebase\Python_Bootcamp\Portfolio Website\static\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\MainCodebase\Python_Bootcamp\Portfolio Website\static\assets" />
     </key>
   </component>
