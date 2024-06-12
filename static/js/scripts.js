@@ -1,30 +1,75 @@
-/*!
-* Start Bootstrap - Clean Blog v6.0.9 (https://startbootstrap.com/theme/clean-blog)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/master/LICENSE)
-*/
-window.addEventListener('DOMContentLoaded', () => {
-    let scrollPos = 0;
-    const mainNav = document.getElementById('mainNav');
-    const headerHeight = mainNav.clientHeight;
-    window.addEventListener('scroll', function() {
-        const currentTop = document.body.getBoundingClientRect().top * -1;
-        if ( currentTop < scrollPos) {
-            // Scrolling Up
-            if (currentTop > 0 && mainNav.classList.contains('is-fixed')) {
-                mainNav.classList.add('is-visible');
-            } else {
-                console.log(123);
-                mainNav.classList.remove('is-visible', 'is-fixed');
-            }
-        } else {
-            // Scrolling Down
-            mainNav.classList.remove(['is-visible']);
-            if (currentTop > headerHeight && !mainNav.classList.contains('is-fixed')) {
-                mainNav.classList.add('is-fixed');
-            }
-        }
-        scrollPos = currentTop;
-    });
-})
+const punctuation_timer = 145;
+const space_timer = 17;
+const letter_timer = 10;
 
+
+const dialog = [
+    "Hi! My name is Isaiah, and I'm a software developer. You can check out some of my work by scrolling down below, or you can see my skills by clicking on this textbox!",
+    "I typically use Python and Javascript with a bit of C#, HTML, and CSS. I do have some knowledge with C++ and Java too",
+    "Some of the software and frameworks that I've used are the Godot and Unity game engines, Git, Docker, MongoDB, Flask, Bootstrap, and Postman!"
+
+]
+
+var dialogIndex = 0
+var can_click = true
+
+// On start up
+document.addEventListener('DOMContentLoaded', function(e) {
+    const text = document.querySelector(".dialog-text");
+    printLetterByLetter(text, dialog[dialogIndex++], 10);
+
+});
+
+
+const clip = document.querySelectorAll(".hover-to-play");
+for (let i = 0; i < clip.length; i++) { clip[i].addEventListener("mouseenter", function (e) { clip[i].play();
+  }); clip[i].addEventListener("mouseout", function (e) { clip[i].pause(); }); }
+
+
+const textBox = document.querySelector(".dialog-textbox");
+textBox.addEventListener("click", function(e) {
+    const text = document.querySelector(".dialog-text");
+    //text.innerHTML = dialog[dialogIndex++]
+
+   printLetterByLetter(text, dialog[dialogIndex++], 10);
+
+    if (dialogIndex >= dialog.length) {
+        dialogIndex = 0
+    }
+});
+
+async function printLetterByLetter(destination, message, speed){
+    if (!can_click) {
+        return;
+    }
+
+    can_click = false;
+    var i = 0;
+    destination.innerHTML = "";
+
+    // For each character:
+    for (var i = 0; i <= message.length; i++) {
+
+        var char = message.charAt(i);
+        //console.log(char)
+       destination.innerHTML += char;
+        switch (char) {
+            case "!":
+                await new Promise(resolve => setTimeout(resolve, punctuation_timer));
+            case ".":
+                await new Promise(resolve => setTimeout(resolve, punctuation_timer));
+            case ",":
+                await new Promise(resolve => setTimeout(resolve, punctuation_timer));
+            case "?":
+                await new Promise(resolve => setTimeout(resolve, punctuation_timer));
+            case ":":
+                await new Promise(resolve => setTimeout(resolve, punctuation_timer));
+            case " ":
+                await new Promise(resolve => setTimeout(resolve, space_timer));
+            default:
+                await new Promise(resolve => setTimeout(resolve, letter_timer));
+        }
+    }
+
+    can_click = true
+}
