@@ -5,34 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ee2c546-b8be-498c-bfc2-93e2111065d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/assets/svg/Frame 1(3).svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/svg/character.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/svg/character1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/svg/dialog-svg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/svg/frame1-ani.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/svg/frame1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/video/breakout.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/video/caverna.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/video/encounter.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/video/favorite-game.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/video/hertzbot1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/video/nexus-video.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/video/project-encounter-video.mkv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/video/qvr.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/video/landing-video.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about-me.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/projects.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/skills.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/video/project-encounter-video.mkv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
