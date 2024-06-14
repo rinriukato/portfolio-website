@@ -6,30 +6,95 @@
     --drop-shadow-color: #000000;
 }
 
-
 body {
    background-color: var(--primary-color);
 }
 
-.overlay-text {
-  align-self: flex-start;
-  transform: translateY(-20%);
+h1 {
+    position: relative;
+    color: #FFFFFF
+}
 
-  padding:20px;
+h1:before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000000;
+    transform: perspective(1000px) rotateX(15deg) rotateY(10deg);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dialog-box {
+   display: flex;
+   align-self: flex-center;
+   background-color: var(--box-color);
+   min-height: 300px;
+   max-width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+   border:solid 3px #000000;
+   position: relative;
+}
+
+.dialog-box:before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    top: -15px;
+    left: 23px;
+    right: -20px;
+    bottom: 50px;
+    background-color: #000000;
+
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(12deg);
+}
+
+.dialog-box:after {
+    content: "Isaiah";
+    position: absolute;
+    z-index: 0;
+    top: -55px;
+    left: 60px;
+    right: -30px;
+    bottom: 50px;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-family: "Arsenal", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 .divider {
-    min-height: 10vh;
+    min-height: 30vh;
 }
 
 .project-box {
+    display: flex;
     background-color: var(--box-color);
-    filter: drop-shadow(20px 20px 0px #000000);
-    border-color: var(--box-color);
-    border-width: 2px;
-    border-radius: 50px;
-    height: 505px;
+    filter: drop-shadow(20px -20px 0px #000000);
+    border:solid 3px #000000;
+    min-height: 550px;
+    min-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: skewX(-3deg);
 }
+
 
 @media screen and (max-width: 600px) {
    .project-box {
@@ -37,13 +102,9 @@ body {
    }
 }
 
-
 .character-dropshadow {
     filter: drop-shadow(20px 20px 0px #000000);
-}
-
-.video-wrap {
-    border-radius: 0 50px 50px 0;
+    z-index: auto;
 }
 
 .ignore-padding {
@@ -51,19 +112,21 @@ body {
     padding-left: 0 !important;
 }
 
-.dialog-textbox {
-    width: 675px;
-    height: 175px;
-    align-self: flex-start;
-    transform: translateY(-340px);
+.video-wrap {
+    width: 100%;
+    height: 550px;
+    object-fit: cover
 }
+
 
 .dialog-text {
     font-size: 25px;
     letter-spacing: 0em;
+    padding: 20px;
 }
 
 .tech-stack {
+  display: inline-block;
   background-color: var(--item-color);
   border-radius: 4px;
   padding: 8px;
@@ -71,11 +134,28 @@ body {
   margin-bottom: 10px;
 }
 
-.section-divider {
-  height: 10px;
-  width: 200px;
-  background-color: var(--secondary-color);
-  border-radius: 4px;
+.arsenal-regular {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.arsenal-bold {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.arsenal-regular-italic {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.arsenal-bold-italic {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .slide-right {

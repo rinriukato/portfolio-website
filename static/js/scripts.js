@@ -26,7 +26,7 @@ for (let i = 0; i < clip.length; i++) { clip[i].addEventListener("mouseenter", f
   }); clip[i].addEventListener("mouseout", function (e) { clip[i].pause(); }); }
 
 
-const textBox = document.querySelector(".dialog-textbox");
+const textBox = document.querySelector(".dialog-box");
 textBox.addEventListener("click", function(e) {
     const text = document.querySelector(".dialog-text");
     //text.innerHTML = dialog[dialogIndex++]

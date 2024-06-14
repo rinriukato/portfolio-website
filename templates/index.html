@@ -7,6 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          rel="stylesheet">
 </head>
 <body>
 <!--- Navigation Bar --->
@@ -23,101 +27,40 @@
 <!--- Navigation Bar END -->
 <!--- Hero --->
 <div class="container">
-    <div class="px-4 py-1 my-3 text-center">
-        <img class="d-block mx-auto character-dropshadow"
-             src="{{ url_for('static', filename='assets/svg/character1.svg') }}"
-             alt="profile" width="300" height="500">
-        <!---<object class="overlay-text" data="{{ url_for('static', filename='assets/svg/frame1.svg') }}"></object> --->
-        <div>
-            <svg class="overlay-text" width="808" height="351" viewBox="0 0 808 351" fill="none"
-                 preserveAspectRatio="xMidYMid meet"
-                 xmlns="http://www.w3.org/2000/svg">
-                <g id="Frame 1" filter="url(#filter0_d_3_2)">
-                    <g id="textbox-name" filter="url(#filter1_d_3_2)">
-                        <rect x="4" width="115" height="45" rx="7" fill="white"/>
-                        <rect x="4.5" y="0.5" width="114" height="44" rx="6.5" stroke="black"/>
-                    </g>
-                    <g id="textbox" filter="url(#filter2_d_3_2)">
-                        <path d="M4 53C4 50.2386 6.23858 48 9 48H788C790.761 48 793 50.2386 793 53V289C793 291.761 790.761 294 788 294H9.00002C6.2386 294 4 291.761 4 289V53Z"
-                              fill="#FFFDFD"/>
-                        <path d="M9 48.5H788C790.485 48.5 792.5 50.5147 792.5 53V289C792.5 291.485 790.485 293.5 788 293.5H9.00002C6.51474 293.5 4.5 291.485 4.5 289V53C4.5 50.5147 6.51472 48.5 9 48.5Z"
-                              stroke="black"/>
-                    </g>
-                    <text id="text-name" fill="black" xml:space="preserve" style="white-space: pre"
-                          font-family="Segoe UI"
-                          font-size="25" letter-spacing="0em"><tspan x="26.7227" y="31.0909">Isaiah </tspan></text>
-                    <path id="arrow-right" class="slide-right"
-                          d="M757.914 257.421L744.6 268.515C742.972 269.872 740.5 268.714 740.5 266.595V244.405C740.5 242.286 742.972 241.128 744.6 242.485L757.914 253.579C759.114 254.579 759.114 256.421 757.914 257.421Z"
-                          fill="white" stroke="black"/>
-                </g>
-                <defs>
-                    <filter id="filter0_d_3_2" x="-3" y="0" width="815" height="359" filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                       result="hardAlpha"/>
-                        <feOffset dy="4"/>
-                        <feGaussianBlur stdDeviation="2"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_2"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_2" result="shape"/>
-                    </filter>
-                    <filter id="filter1_d_3_2" x="4" y="0" width="120" height="49" filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                       result="hardAlpha"/>
-                        <feOffset dx="5" dy="4"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_2"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_2" result="shape"/>
-                    </filter>
-                    <filter id="filter2_d_3_2" x="4" y="48" width="799" height="256" filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                       result="hardAlpha"/>
-                        <feOffset dx="10" dy="10"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_2"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_2" result="shape"/>
-                    </filter>
-                </defs>
-            </svg>
-            <div class="dialog-textbox mx-auto text-start">
-                <p class="dialog-text"> Hello, My name is Isaiah, and I'm a software developer. You can check out some
-                    of my work by
-                    scrolling down below, or you can see my skills by clicking
-                    on this textbox!</p>
-            </div>
-        </div>
+    <img class="d-block mx-auto character-dropshadow"
+         src="{{ url_for('static', filename='assets/svg/character1.svg') }}"
+         alt="profile" width="300" height="500">
+    <div class="dialog-box">
+        <p class="dialog-text arsenal-regular"> Hello, My name is Isaiah, and I'm a software developer. You can check
+            out some
+            of my work by
+            scrolling down below, or you can see my skills by clicking
+            on this textbox!</p>
     </div>
 </div>
 <!--- Hero END -->
 <div class="divider"></div>
 <!--- Project Showcase --->
 <div class="container ">
-    <h1 id="projects" class="text-center display-1 font-weight-bold"> Project Showcase </h1>
-    <div class="section-divider mx-auto md-auto"></div>
+    <h1 id="projects" class="text-center display-1 arsenal-bold"> Project Showcase </h1>
+    <div class="divider"></div>
 
     <div class="row featurette my-5 align-items-center project-box ">
         <div class="col-lg-7 col-sm-12">
-            <h2 class="display-4 fw-normal lh-1 mx-5">Nintendo Nexus</h2>
-            <p class="lead mx-5">A quiz show engine powered by the Godot Engine. My friends and I developed this to host
+            <h2 class="display-4 lh-1 mx-5 arsenal-bold">Nintendo Nexus</h2>
+            <p class="lead mx-5 arsenal-regular">A quiz show engine powered by the Godot Engine. My friends and I
+                developed this to host
                 a
                 game show at various gaming/anime conventions like: TooManyGames, OtakuFest, MetroCon, and Polycon!</p>
             <div class="mx-5">
-                <span class="tech-stack">Godot Engine</span>
-                <span class="tech-stack">GDScript</span>
+                <span class="tech-stack arsenal-regular">Godot Engine</span>
+                <span class="tech-stack arsenal-regular">GDScript</span>
             </div>
 
         </div>
         <div class="col-5 ignore-padding">
             <video class="hover-to-play video-wrap d-none d-lg-block d-none d-lg-block"
-                   style="width: 100%; height: 505px; object-fit: cover;" loop muted>
+                    loop muted>
                 <source src="{{ url_for('static', filename='assets/video/nexus-video.mp4') }}" type="video/mp4">
             </video>
         </div>
@@ -125,19 +68,20 @@
 
     <div class="row featurette my-5 align-items-center project-box">
         <div class="col-lg-7 col-sm-12">
-            <h2 class="display-4 fw-normal lh-1 mx-5">Caverna</h2>
-            <p class="lead mx-5">A short but sweet 2D platformer video game I developed in a month to teach myself how
+            <h2 class="display-4 lh-1 mx-5 arsenal-bold">Caverna</h2>
+            <p class="lead mx-5 arsenal-regular">A short but sweet 2D platformer video game I developed in a month to
+                teach myself how
                 to
                 build games with Godot.</p>
             <div class="mx-5">
-                <span class="tech-stack">Godot Engine</span>
-                <span class="tech-stack">GDScript</span>
+                <span class="tech-stack arsenal-regular">Godot Engine</span>
+                <span class="tech-stack arsenal-regular">GDScript</span>
             </div>
 
         </div>
         <div class="col-5 ignore-padding">
             <video class="hover-to-play video-wrap d-none d-lg-block d-none d-lg-block"
-                   style="width: 100%; height: 505px; object-fit: cover;" loop muted>
+                    loop muted>
                 <source src="{{ url_for('static', filename='assets/video/caverna.mp4') }}" type="video/mp4">
             </video>
         </div>
@@ -145,19 +89,20 @@
 
     <div class="row featurette my-5 align-items-center project-box">
         <div class="col-lg-7 col-sm-12">
-            <h2 class="display-4 fw-normal lh-1 mx-5">HertzBot</h2>
-            <p class="lead mx-5">A discord bot that features a user text-based battle system. Also dispenses drinks!</p>
+            <h2 class="display-4 lh-1 mx-5 arsenal-bold">HertzBot</h2>
+            <p class="lead mx-5 arsenal-regular">A discord bot that features a user text-based battle system. Also
+                dispenses drinks!</p>
             <div class="mx-5">
-                <span class="tech-stack">JavaScript</span>
-                <span class="tech-stack">Node.js</span>
-                <span class="tech-stack">MongoDB</span>
-                <span class="tech-stack">Docker</span>
+                <span class="tech-stack arsenal-regular">JavaScript</span>
+                <span class="tech-stack arsenal-regular">Node.js</span>
+                <span class="tech-stack arsenal-regular">MongoDB</span>
+                <span class="tech-stack arsenal-regular">Docker</span>
             </div>
 
         </div>
         <div class="col-5 ignore-padding">
             <video class="hover-to-play video-wrap d-none d-lg-block"
-                   style="width: 100%; height: 505px; object-fit: cover;" loop muted>
+                    loop muted>
                 <source src="{{ url_for('static', filename='assets/video/hertzbot1.mp4') }}" type="video/mp4">
             </video>
         </div>
@@ -165,21 +110,22 @@
 
     <div class="row featurette my-5 align-items-center project-box">
         <div class="col-lg-7 col-sm-12">
-            <h2 class="display-4 fw-normal lh-1 mx-5">Quantum Hydrogen Atom Simulation in VR</h2>
-            <p class="lead mx-5">An interactable simulation of the quantum state of a hydrogen atom. I built this
+            <h2 class="display-4 lh-1 mx-5 arsenal-bold">Quantum Hydrogen Atom Simulation in VR</h2>
+            <p class="lead mx-5 arsenal-regular">An interactable simulation of the quantum state of a hydrogen atom. I
+                built this
                 application with my team as a part of my undergraduate senior design project.</p>
             <div class="mx-5">
-                <span class="tech-stack">C#</span>
-                <span class="tech-stack">Unity Engine</span>
-                <span class="tech-stack">HTC Vive</span>
-                <span class="tech-stack">Oculus Rift VR</span>
-                <span class="tech-stack">SteamVR</span>
+                <span class="tech-stack arsenal-regular">C#</span>
+                <span class="tech-stack arsenal-regular">Unity Engine</span>
+                <span class="tech-stack arsenal-regular">HTC Vive</span>
+                <span class="tech-stack arsenal-regular">Oculus Rift VR</span>
+                <span class="tech-stack arsenal-regular">SteamVR</span>
             </div>
 
         </div>
         <div class="col-5 ignore-padding">
             <video class="hover-to-play video-wrap d-none d-lg-block"
-                   style="width: 100%; height: 505px; object-fit: cover;" loop muted>
+                    loop muted>
                 <source src="{{ url_for('static', filename='assets/video/qvr.mp4') }}" type="video/mp4">
             </video>
         </div>
@@ -187,24 +133,23 @@
 
     <div class="row featurette my-5 align-items-center project-box">
         <div class="col-lg-7 col-sm-12">
-            <h2 class="display-4 fw-normal lh-1 mx-5">Video Game Ranking Website</h2>
-            <p class="lead mx-5">A full-stack web application that dynamically displays a list of your favorite video
-                game titles. Allows for full CRUD operation of adding new entries, update existing entries, and
-                deletion. Connects to the IGDB API to fetch most video game titles.</p>
+            <h2 class="display-4 lh-1 mx-5 arsenal-bold">Video Game Ranking Website</h2>
+            <p class="lead mx-5 arsenal-regular">A full-stack web application that dynamically displays a list of your
+                favorite video game titles. Allows for full CRUD operations of adding, updating and
+                deletion entries. Connects to the IGDB API to fetch most video game titles.</p>
             <div class="mx-5">
-                <span class="tech-stack">Python</span>
-                <span class="tech-stack">HTML</span>
-                <span class="tech-stack">CSS</span>
-                <span class="tech-stack">Flask</span>
-                <span class="tech-stack">Bootstrap</span>
-                <span class="tech-stack">SQL</span>
-                <span class="tech-stack">API</span>
+                <span class="tech-stack arsenal-regular">Python</span>
+                <span class="tech-stack arsenal-regular">HTML</span>
+                <span class="tech-stack arsenal-regular">CSS</span>
+                <span class="tech-stack arsenal-regular">Flask</span>
+                <span class="tech-stack arsenal-regular">Bootstrap</span>
+                <span class="tech-stack arsenal-regular">SQL</span>
+                <span class="tech-stack arsenal-regular">API</span>
             </div>
 
         </div>
         <div class="col-5 ignore-padding">
-            <video class="hover-to-play video-wrap d-none d-lg-block"
-                   style="width: 100%; height: 505px; object-fit: cover;" loop muted>
+            <video class="hover-to-play video-wrap d-none d-lg-block" loop muted>
                 <source src="{{ url_for('static', filename='assets/video/favorite-game.mp4') }}" type="video/mp4">
             </video>
         </div>
@@ -212,22 +157,23 @@
 
     <div class="row featurette my-5 align-items-center project-box">
         <div class="col-lg-7 col-sm-12">
-            <h2 class="display-4 fw-normal lh-1 mx-5">Portfolio</h2>
-            <p class="lead mx-5">This page! Backend run by Flask to auto-generate components from JSON data for easy
+            <h2 class="display-4 lh-1 mx-5 arsenal-bold">Portfolio</h2>
+            <p class="lead mx-5 arsenal-regular">This page! Backend run by Flask to auto-generate components from JSON
+                data for easy
                 maintenance and built with Bootstrap to be responsive!</p>
             <div class="mx-5">
-                <span class="tech-stack">Python</span>
-                <span class="tech-stack">JavaScript</span>
-                <span class="tech-stack">HTML</span>
-                <span class="tech-stack">CSS</span>
-                <span class="tech-stack">Flask</span>
-                <span class="tech-stack">Bootstrap</span>
+                <span class="tech-stack arsenal-regular">Python</span>
+                <span class="tech-stack arsenal-regular">JavaScript</span>
+                <span class="tech-stack arsenal-regular">HTML</span>
+                <span class="tech-stack arsenal-regular">CSS</span>
+                <span class="tech-stack arsenal-regular">Flask</span>
+                <span class="tech-stack arsenal-regular">Bootstrap</span>
             </div>
 
         </div>
         <div class="col-5 ignore-padding">
             <video class="hover-to-play video-wrap d-none d-lg-block"
-                   style="width: 100%; height: 505px; object-fit: cover;" loop muted>
+                    loop muted>
                 <source src="{{ url_for('static', filename='assets/video/landing-video.mp4') }}" type="video/mp4">
             </video>
         </div>
@@ -235,17 +181,18 @@
 
     <div class="row featurette my-5 align-items-center project-box">
         <div class="col-lg-7 col-sm-12">
-            <h2 class="display-4 fw-normal lh-1 mx-5">Project Encounter</h2>
-            <p class="lead mx-5">A top-down shooter prototype I created in Godot featuring pixel art I created!</p>
+            <h2 class="display-4 lh-1 mx-5 arsenal-bold">Project Encounter</h2>
+            <p class="lead mx-5 arsenal-regular">A top-down shooter prototype I created in Godot featuring pixel art I
+                created!</p>
             <div class="mx-5">
-                <span class="tech-stack">Godot</span>
-                <span class="tech-stack">GDScript</span>
+                <span class="tech-stack arsenal-regular">Godot</span>
+                <span class="tech-stack arsenal-regular">GDScript</span>
             </div>
 
         </div>
         <div class="col-5 ignore-padding">
             <video class="hover-to-play video-wrap d-none d-lg-block"
-                   style="width: 100%; height: 505px; object-fit: cover;" loop muted>
+                    loop muted>
                 <source src="{{ url_for('static', filename='assets/video/encounter.mp4') }}" type="video/mp4">
             </video>
         </div>
@@ -253,16 +200,16 @@
 
     <div class="row featurette my-5 align-items-center project-box">
         <div class="col-lg-7 col-sm-12">
-            <h2 class="display-4 fw-normal lh-1 mx-5">Breakout in Python</h2>
-            <p class="lead mx-5">I recreated Breakout with Python through the turtle module</p>
+            <h2 class="display-4 lh-1 mx-5 arsenal-bold">Breakout in Python</h2>
+            <p class="lead mx-5 arsenal-regular">I recreated Breakout with Python through the turtle module</p>
             <div class="mx-5">
-                <span class="tech-stack">Python</span>
+                <span class="tech-stack arsenal-regular">Python</span>
             </div>
 
         </div>
         <div class="col-5 ignore-padding">
             <video class="hover-to-play video-wrap d-none d-lg-block"
-                   style="width: 100%; height: 505px; object-fit: cover;" loop muted>
+                    loop muted>
                 <source src="{{ url_for('static', filename='assets/video/breakout.mp4') }}" type="video/mp4">
             </video>
         </div>
@@ -272,9 +219,9 @@
 </div>
 
 <!--- Contact Me --->
+<div class="divider"></div>
 <div id="contact-me" class="container">
-    <h1 class="text-center display-1 font-weight-bold"> Contact Me </h1>
-    <div class="section-divider mx-auto md-auto"></div>
+    <h1 class="text-center display-1 arsenal-bold"> Contact Me </h1>
 
     <div class="mx-auto align-items-center text-center py-5 my-5">
         <a class="col-lg-4 col-sm-12 mx-5" href="mailto:rinriukato@gmail.com?subject='Contact from Portfolio Website'">Email</a>
